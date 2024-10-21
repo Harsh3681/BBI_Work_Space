@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation Form</title>
+    
+    <style>
+        .error-message {
+            color: red;
+            display: none;
+        }
+        .success-message {
+            color: green;
+            display: none;
+        }
+       input:invalid + .error-message {
+            display: block;
+        }
+        input:valid + .success-message {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create Account</h2>
+        <form>
+            <label for="text">Password</label>
+            <input type="password" id="password" name="password" 
+                   pattern="^[A-Z]{2}.*[0-9].{5,}$" 
+                   title="Password must start with two uppercase letters, contain at least one number, and be at least 8 characters long."
+                   required>
+
+            <div class="error-message message">
+                Password must start with two uppercase letters, contain at least one number, and be at least 8 characters long.
+            </div>
+
+            <div class="success-message message">
+                Password is valid!
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

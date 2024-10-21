@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 max-scale=5 min-scale=0.3"> <!--Q) scaling viweport meta data-->
+  <title>Online Bookstore</title>
+
+  <link rel="stylesheet" href="style.css"></link>
+  <script src="temp.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .featured-book {
+      border: 2px solid gold;
+      background-color: #f5f5f5;
+    }
+
+    #header {
+      background-color: #39d32b !important; 
+      color: black;
+      padding: 20px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .book-description p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    nav > ul > li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    h1 + p { 
+      font-style: italic;
+    }
+
+    h2 ~ p {  
+      color: #777;
+    }
+
+    a:hover { 
+      color: #ff6600;
+    }
+    
+    input:focus {  
+      border: 5px solid blue;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #ff6600;
+    }
+
+    button:active {
+      background-color: blue;
+      transform: scale(0.98); 
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    .product:nth-child(2n) {
+      background-color: lightblue;
+    }
+
+
+    
+    .book-description p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+      
+    }
+
+
+    #js-disabled {
+        display: none;
+        color: red;
+    }
+
+  </style>
+
+  <noscript>
+    <style>
+        #js-disabled {
+            display: block;
+        }
+    </style>
+  </noscript>
+ 
+
+</head>
+
+<body>
+
+  
+
+
+  <div id="js-disabled">
+    JavaScript is disabled in your browser!
+  </div>
+  <script>
+      console.log("JavaScript is enabled.");
+  </script>
+
+  <div class="product">Product 1</div>
+  <div class="product">Product 2</div>
+  <div class="product">Product 3</div>
+  <div class="product">Product 4</div>
+  <div class="product">Product 5</div>
+  <div class="product">Product 6</div>
+
+
+  <a href="book1.html">Read more about this book</a>
+
+  <button>Buy Now</button>
+
+  <input type="text" placeholder="Search for a book...">
+
+  <header id="header" style="background-color: pink;">Welcome to the Online Bookstore</header>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Books</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="book-description">
+    <h1>New Arrivals</h1>
+    <p>Check out the latest collection of books.</p>
+
+    <h2>Bestsellers</h2>
+    <p>These books are highly recommended.</p>
+    <p>Find out what everyone is reading.</p>
+  </div>
+
+  <div class="featured-book">
+    <p>The Great Gatsby</p>
+  </div>
+
+  <input type="text" placeholder="Search for a book...">
+
+  <a href="book1.html">The Catcher in the Rye</a>
+
+  <!-- here below <u> </u> and <ins> </ins> both are same. but we prefered <ins></ins> -->
+
+  <p>Here is our paragraph tag and we insert <u>underline text</u> inside para.</p>
+  <p>Here is our paragraph tag and we insert <ins>underline text</ins> inside para.</p>
+
+</body>
+</html>

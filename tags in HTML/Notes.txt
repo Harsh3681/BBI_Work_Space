@@ -1,0 +1,21 @@
+
+1) for yt video shows in html use----> <iframe src="" />
+2) for normal img and gif shows in html----> <img src="" />
+3) underline the text in html
+
+
+
+4) INITIAL SCALE MAX , MIN SCALE of web page
+5) SELECTOR CSS 
+6) priority of inline css and external and intrernal changes how to change priority from inline
+
+7) how to check if js is desable in user side
+OSI model,  TCP, IP Protocaol
+style css having 10 file according to mb what is the priority.
+8) log pulling and all for fetching req like http, scoket programming check if possible any other protocol available.
+
+9)how to cache clearance after visiting website (only change in html)
+
+
+
+
