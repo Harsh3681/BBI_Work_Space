@@ -154,6 +154,7 @@ class CarRentalSystem {
                 break;
             }
         }
+        console.log('Array ',this.rentals);
 
         if (ToRemoveRental) {
             this.rentals.splice(this.rentals.indexOf(ToRemoveRental), 1);
