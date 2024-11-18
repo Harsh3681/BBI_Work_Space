@@ -33,10 +33,11 @@ function runMultiThreaded(limit) {
     console.log('Start ',start);
     
     const range = Math.ceil(limit / 4);
-
+    
     let completedWorkers = 0;
     let allPrimes = [];
-
+    
+   
     for (let i = 0; i < 4; i++) {
         const worker = new Worker("worker-thread.js");
         workers.push(worker);
