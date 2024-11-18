@@ -12,10 +12,11 @@ function hideLoader() {
 }
 
 // Fetch country data from API and show loader while fetching
+
 function fetchCountryData() {
   showLoader();  // Show loader when fetching starts
 
-  fetch('https://restcountries.com/v3.1/all', { method: 'GET' })
+    fetch('https://restcountries.com/v3.1/all', { method: 'GET' })
     .then(response => response.json())
     .then(jsonBody => {
       countriesData = jsonBody;  // Store fetched countries data
@@ -27,6 +28,7 @@ function fetchCountryData() {
       hideLoader();  // Hide loader if an error occurs
     });
 }
+
 
 // Function to display countries on the webpage
 function displayCountries(countries) {

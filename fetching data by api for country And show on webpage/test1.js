@@ -27,7 +27,6 @@ fetch('https://restcountries.com/v3.1/all', sendObj)
             </div>
         `;
 
-        // Insert the card HTML into the DOM
         myCardBody.innerHTML = newCardHTML;
     }).then(function (jsonBody) {     // and that "json" output take a input by this funct and console.log(jsonBody); ... 👉👉 hence we see out
         console.log(jsonBody);
